@@ -1,0 +1,38 @@
+# Virtual environment
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# Model files
+*.pth
+*.pt
+*.onnx
+
+# Large datasets
+data/raw/
+data/processed/
+
+# Generated outputs
+outputs/predictions/
+outputs/masks/
+outputs/depth_maps/
+outputs/visualizations/
+outputs/reports/
+
+# Environment / secrets
+.env
+*.env
+
+# Temporary files
+*.tmp
+*.temp
