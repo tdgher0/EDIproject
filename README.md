@@ -425,17 +425,16 @@ If installing on a different system, install a PyTorch build compatible with you
 
 ### Required model files
 
-The trained model files are not included in this repository because of their large size.
+The project-trained production model files are not included in the Git repository because of their large size. They are provided as assets in the GitHub `v1.0.0` release.
 
-The production pipeline requires:
+Download and place these two files at the paths shown below:
 
 ```text
 models/checkpoints/best_model.pt
 models/checkpoints/opening_augmented_best_model.pt
-yolo11n-seg.pt
 ```
 
-Place the model files at the paths shown above before running the application.
+The `yolo11n-seg.pt` model is an official Ultralytics pretrained model. If it is not present locally, Ultralytics automatically downloads it when the application starts.
 
 Large datasets, trained checkpoints, and generated outputs are intentionally excluded from Git.
 
