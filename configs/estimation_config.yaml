@@ -1,0 +1,38 @@
+# Example estimation configuration for the EDI project.
+#
+# The values below are illustrative *assumptions* and should be
+# overridden by the project team to reflect real market prices,
+# coverage rates, and local labour rates.
+#
+# Units:
+#   area_m2          – square metres
+#   coats            – number of coats (float, e.g. 2.0)
+#   coverage_m2_per_litre / _per_kg – area covered by one litre or kg
+#   price_per_litre / price_per_kg   – cost in local currency per litre or kg
+#   wastage_percent                – percentage of material wasted (0‑100)
+#   rate_per_m2                     – labour cost per square metre
+
+paint:
+  # Coverage in m² per litre (example assumption)
+  coverage_m2_per_litre: 12.0
+  # Price per litre in local currency units (example assumption)
+  price_per_litre: 30.0
+  # Wastage percentage (example assumption)
+  wastage_percent: 5.0
+  # Default number of coats for paint
+  coats: 2
+
+primer:
+  coverage_m2_per_litre: 15.0
+  price_per_litre: 18.0
+  wastage_percent: 5.0
+  coats: 1
+
+putty:
+  coverage_m2_per_kg: 4.0
+  price_per_kg: 25.0
+  wastage_percent: 5.0
+  coats: 1
+
+labour:
+  rate_per_m2: 20.0

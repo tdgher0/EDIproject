@@ -36,3 +36,12 @@ outputs/reports/
 # Temporary files
 *.tmp
 *.temp
+# Local backup
+app_final_backup.py
+
+# SUN RGB-D toolbox
+SUNRGBDtoolbox/
+SUNRGBDtoolbox.zip
+
+# Generated project outputs
+outputs/

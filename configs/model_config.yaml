@@ -1,0 +1,25 @@
+model:
+  name: UNetResNet34
+  encoder: resnet34
+  pretrained: true
+  in_channels: 3
+  out_channels: 1
+
+data:
+  train: data/processed/sunrgbd/train_split
+  val: data/processed/sunrgbd/val
+  test: data/processed/sunrgbd/test
+
+train:
+  image_size: [512, 512]
+  batch_size: 4
+  epochs: 20
+  learning_rate: 0.0001
+  optimizer: Adam
+  loss:
+    - BCEWithLogitsLoss
+    - DiceLoss
+
+checkpoint:
+  monitor: val_iou
+  mode: max
